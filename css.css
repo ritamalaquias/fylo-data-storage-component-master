@@ -17,23 +17,25 @@ body{
     font-family:'Raleway';
 }
 .content{
-    column-count: 2;
+    margin-left: 12%;
+
 }
 .rounded-square{
-    display: inline-block;
     border-radius: 10px;
-    background: var(--dark-blue);
-    padding: 20px;
     width: 540px;
     height: 155px; 
 }
-.rounded-square-main{
-    display: inline-block;
+.rounded-square-main{ 
     border-radius: 10px 90px 10px 10px;
-    background: var(--dark-blue);
-    padding: 20px;
-    width: 200px;
+    width: 350px;
     height: 200px; 
+}
+
+.rounded-square, .rounded-square-main{
+    display: inline-block;
+    padding: 20px;
+    background: var(--dark-blue);
+    vertical-align:bottom;
 }
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
