@@ -37,5 +37,18 @@ body{
     background: var(--dark-blue);
     vertical-align:bottom;
 }
+.dark-rounded-square{
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    vertical-align:bottom;
+}
+
+.img{
+    padding: 13px;
+}
+
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
