@@ -15,10 +15,20 @@ body{
     background-repeat: no-repeat;
     font-size: 14px;
     font-family:'Raleway';
+    /*---*/
+
+}
+.center{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
 }
 .content{
     margin-left: 12%;
-
 }
 .rounded-square{
     border-radius: 10px;
@@ -48,6 +58,10 @@ body{
 
 .img{
     padding: 13px;
+}
+label {
+    padding-right: 10px;
+    font-size: 1rem;
 }
 
 .attribution { font-size: 11px; text-align: center; }
