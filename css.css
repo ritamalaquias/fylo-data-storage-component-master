@@ -15,18 +15,21 @@ body{
     background-repeat: no-repeat;
     font-size: 14px;
     font-family:'Raleway';
-    /*---*/
+}
+h1{
+    color: var(--very-dark-blue);
+    font-weight: 700px;
+    display: inline;
+    padding-left: 25px;
+    margin-top: 40px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+.progress{
+    width: 1000px;
+}
 
-}
-.center{
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    
-}
 .content{
     margin-left: 12%;
 }
@@ -40,12 +43,15 @@ body{
     width: 350px;
     height: 200px; 
 }
-
 .rounded-square, .rounded-square-main{
     display: inline-block;
-    padding: 20px;
     background: var(--dark-blue);
     vertical-align:bottom;
+    padding-left: 40px;
+    padding-top: 40px;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
 }
 .dark-rounded-square{
     background-color: var(--very-dark-blue);
@@ -59,10 +65,35 @@ body{
 .img{
     padding: 13px;
 }
-label {
-    padding-right: 10px;
-    font-size: 1rem;
+
+/*--speech bubble-*/
+.speech-bubble {
+	position: absolute;
+	background: white;
+	border-radius: .4em;
+    width: 180px;
+    height: 75px;
+    padding: 0px;
+    margin-left: 280px;
+    margin-top: -80px;
 }
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 90%;
+	width: 0;
+	height: 0;
+	border: 1em solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	border-right: 0;
+	margin-bottom: -0.781em;
+}
+
+
+
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
