@@ -56,22 +56,16 @@ progress::-webkit-progress-bar{
     height: 20px;    
 }
 
-.dot {
-height: 25px;
-width: 25px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-}
   
 .content{
-    margin-top: 17%;
+    margin-top: 16%;
     margin-left: 23%;
 }
 .rounded-square{
     border-radius: 10px;
     width: 540px;
     height: 155px; 
+    margin-left: 30px;
 }
 .rounded-square-main{ 
     border-radius: 10px 90px 10px 10px;
@@ -88,6 +82,7 @@ display: inline-block;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
+    box-shadow: 10px 10px 10px hsl(229, 57%, 11%, 20%);
 }
 .dark-rounded-square{
     background-color: var(--very-dark-blue);
@@ -96,6 +91,11 @@ display: inline-block;
     height: 48px;
     display: inline-block;
     vertical-align:bottom;
+    margin-right: 16px;
+}
+.img-logo{
+    margin: 5px;
+    margin-bottom: 25px;
 }
 
 .img{
@@ -129,7 +129,15 @@ display: inline-block;
 }
 
 
-
+.dot {
+    margin-left: 0;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 4px;
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
