@@ -12,11 +12,14 @@
 
 body{
     color: var(--pale-blue);
+    font-size: 14px;
+    font-family:'Raleway';
     background-color: var(--very-dark-blue);
     background-image: url(images/bg-desktop.png);
     background-repeat: no-repeat;
-    font-size: 14px;
-    font-family:'Raleway';
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: contain;
 }
 h1{
     color: var(--very-dark-blue);
@@ -32,17 +35,38 @@ progress{
     width: 100%;
     background-color: var(--medium-blue);
     border: 3px solid var(--medium-blue);
-    border-radius: 20px;
+    border-radius: 20px;    
+    appearance: none;
 }
+
 /*in firefox this only refers to the value*/
 progress::-moz-progress-bar { 
-    background-color: white;
+    background-image: var(--primary-gradient);
     border-radius: 20px;
   }
-  
 
+/*for edge*/
+progress::-webkit-progress-value { 
+    background-color: orange;
+  }
+
+progress::-webkit-progress-bar{
+    background-color: var(--medium-blue);
+    border-radius: 20px;
+    height: 20px;    
+}
+
+.dot {
+height: 25px;
+width: 25px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+}
+  
 .content{
-    margin-left: 12%;
+    margin-top: 17%;
+    margin-left: 23%;
 }
 .rounded-square{
     border-radius: 10px;
